@@ -4,8 +4,8 @@ Este proyecto es una API REST básica construida con Express.js y PostgreSQL, ut
 
 ## Requisitos Previos
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- Docker
+- Docker Compose
 
 ## Estructura del Proyecto
 
@@ -35,7 +35,7 @@ El proyecto utiliza las siguientes variables de entorno (ya configuradas en dock
 
 1. Clonar o descargar este repositorio:
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/Milcatoledo/Back-End_con_Node.js_PostgreSQL.git
    cd ServerBasicExpress
    ```
 
@@ -50,11 +50,6 @@ El proyecto utiliza las siguientes variables de entorno (ya configuradas en dock
    - Iniciará la API en el puerto 3000
 
 ## Endpoints Disponibles
-
-### Prueba de Conexión
-- `GET /`: Mensaje de bienvenida
-- `GET /test-db`: Prueba la conexión con la base de datos
-
 ### Gestión de Usuarios
 - `GET /usuarios`: Obtiene la lista de todos los usuarios
 - `GET /usuarios/:id`: Obtiene un usuario por su ID
@@ -77,11 +72,6 @@ CREATE TABLE usuarios (
 Para probar los endpoints, puedes usar curl o cualquier cliente HTTP:
 
 ```bash
-# Probar que la API está funcionando
-curl http://localhost:3000
-
-# Probar la conexión a la base de datos
-curl http://localhost:3000/test-db
 
 # Obtener todos los usuarios
 curl http://localhost:3000/usuarios
